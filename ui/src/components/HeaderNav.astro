@@ -1,0 +1,72 @@
+---
+
+---
+
+<header class="bg-gray-400 rounded-b-lg w-2/2 p-2">
+	<div class=" flex flex-row justify-between gap-4">
+		<div class="flex flex-row justify-start gap-4">
+			<button onclick="openMenu()" class="cursor-pointer lg:hidden">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="size-12 text-black"
+				>
+					<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+				</svg>
+			</button>
+			<div id="categories" class="flex hidden lg:order-2 lg:flex">
+				<ul class="flex">
+					<li class="cursor-pointer">Sport</li>
+					<li class="cursor-pointer">Music</li>
+					<li class="cursor-pointer">Theatre</li>
+				</ul>	
+			</div>
+			<h1 class="text-4xl font-bold text-black lg:order-1">TICKETGUY</h1>
+		</div>
+
+
+		<input type="search" class="w-full justify-self-end border-4 border-slate-200 rounded-md text-3xl invisible lg:order-3 lg:visible" placeholder="Search something here..." />
+		<button onclick="openSearchBar()" class="cursor-pointer lg:hidden">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+				<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+			</svg>
+		</button>
+		
+	</div>
+	<div id="popupSearch" class="hidden flex items-center  lg:hidden">
+		<input type="search" class="justify-self-stretch w-full h-15 border-4 border-slate-200 rounded-md text-3xl mr-10 ml-10" placeholder="Search something here..." />
+	</div>
+	<div id="popupMenu" class="hidden z-10 w-5/5 transition ease-in-out delay-150 lg:hidden">
+		<ul class="flex flex-col text-white">
+			<li class="cursor-pointer text-2xl">Sport</li>
+			<hr>
+			<li class="cursor-pointer text-2xl">Music</li>
+			<hr>
+			<li class="cursor-pointer text-2xl">Theatre</li>
+		</ul>	
+	</div>
+</header>
+
+<script defer>
+	function openMenu()
+	{
+		var categoryList = document.querySelector('#popupMenu');
+		categoryList.classList.toggle("hidden");							
+
+	}
+	function openSearchBar()
+	{
+		var searchBar = document.querySelector('#popupSearch');
+		searchBar.classList.toggle("hidden");	
+	}
+</script>
+
+<style>
+
+</style>
