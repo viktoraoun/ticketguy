@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import HeaderNav from "../components/HeaderNav.astro";
+import HeroSection from "../components/HeroSection.astro";
 ---
 
 <!doctype html>
@@ -14,12 +15,14 @@ import HeaderNav from "../components/HeaderNav.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>TICKETGUY</title>
 	</head>
-	<body class="w-full">
+	<body class="w-full flex flex-col">
 
 		<HeaderNav />
 
 		<main>
+			<HeroSection />
 
+			
 
 		</main>
 
@@ -30,7 +33,7 @@ import HeaderNav from "../components/HeaderNav.astro";
 
 <style>
 	main{
-
+		
 	}
   /* main {
     margin: auto;
