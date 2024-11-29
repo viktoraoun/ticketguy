@@ -4,6 +4,7 @@ import Card from "../components/Card.astro";
 import HeaderNav from "../components/HeaderNav.astro";
 import HeroSection from "../components/HeroSection.astro";
 import FeaturedCard from "../components/FeaturedCard.astro";
+import FeaturedSection from "../components/FeaturedSection.astro";
 ---
 
 <!doctype html>
@@ -22,20 +23,7 @@ import FeaturedCard from "../components/FeaturedCard.astro";
 
 		<main>
 			<HeroSection />
-
-			<section class="p-4 m-4">
-				<h2 class="text-4xl">Featured</h2>
-				<div class="flex flex-col md:flex-row md:flex-wrap md:content-between md:items-start md:gap-4" >
-					<FeaturedCard title="Seal sleep" imageUrl="/feat1.jpg" alt="Sleeping seal" />
-					<FeaturedCard title="Football" imageUrl="/feat2.jpg" alt="Football field" />
-					<FeaturedCard title="Bob Marley" imageUrl="/feat3.jpg" alt="Bob Marley Singing" />
-					<FeaturedCard title="Circus" imageUrl="/feat4.jpg" alt="Circus show" />
-				</div>
-				<hr class="my-10">
-			</section>
-
-			
-
+			<FeaturedSection />
 		</main>
 
 	</body>

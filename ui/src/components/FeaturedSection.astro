@@ -1,0 +1,14 @@
+---
+import FeaturedCard from "./FeaturedCard.astro";
+---
+
+<section class="p-4 m-4">
+    <h2 class="text-4xl">Featured</h2>
+    <div class="flex flex-col md:flex-row md:flex-wrap md:content-between md:items-start md:gap-4" >
+        <FeaturedCard title="Seal sleep" imageUrl="/feat1.jpg" alt="Sleeping seal" />
+        <FeaturedCard title="Football" imageUrl="/feat2.jpg" alt="Football field" />
+        <FeaturedCard title="Bob Marley" imageUrl="/feat3.jpg" alt="Bob Marley Singing" />
+        <FeaturedCard title="Circus" imageUrl="/feat4.jpg" alt="Circus show" />
+    </div>
+    <hr class="my-10">
+</section>
